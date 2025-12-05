@@ -1,0 +1,19 @@
+__pycache__/
+.cache/
+*.pyc
+*.pth
+*.onnx
+*.mat
+*.log
+
+# experiment artifacts
+tuning_runs/
+wandb/
+best_runs/
+analysis_runs/
+figures/
+eval_figures/
+https:
+
+# training data
+matlab_env/CNN-for-droplet-sorting/Training Data/
