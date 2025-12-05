@@ -1,0 +1,54 @@
+{
+  "classes": [
+    "2",
+    "Empty",
+    "Single"
+  ],
+  "class_to_idx": {
+    "2": 0,
+    "Empty": 1,
+    "Single": 2
+  },
+  "input_size": [
+    96,
+    96,
+    3
+  ],
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "metrics": {
+    "best_val_acc": 0.9922509225092251,
+    "test_acc": 0.9929889298892989,
+    "epochs": 8,
+    "config": {
+      "lr": 0.0005,
+      "weight_decay": 0.0001,
+      "batch_size": 64,
+      "epochs": 8,
+      "input_size": 96,
+      "sched_patience": 2,
+      "sched_factor": 0.3,
+      "label_smoothing": 0.0
+    }
+  },
+  "training_args": {
+    "lr": 0.0005,
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "epochs": 8,
+    "input_size": 96,
+    "sched_patience": 2,
+    "sched_factor": 0.3,
+    "label_smoothing": 0.0
+  }
+}

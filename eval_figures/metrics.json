@@ -1,0 +1,54 @@
+{
+  "best_threshold": 0.2,
+  "rare_class": "2",
+  "val_macro_f1": 0.7605182182907221,
+  "val_bal_acc": 0.8796464743180561,
+  "test_macro_f1_tuned": 0.7361306860336457,
+  "test_bal_acc_tuned": 0.747948717948718,
+  "test_macro_f1_base": 0.7361306860336457,
+  "test_bal_acc_base": 0.747948717948718,
+  "test_acc_tuned": 0.9929889298892989,
+  "test_acc_base": 0.9929889298892989,
+  "per_class_precision": [
+    0.3333333333333333,
+    1.0,
+    0.8617886178861789
+  ],
+  "per_class_recall": [
+    0.25,
+    0.9938461538461538,
+    1.0
+  ],
+  "per_class_f1": [
+    0.2857142857142857,
+    0.9969135802469136,
+    0.925764192139738
+  ],
+  "confusion_matrix": [
+    [
+      1,
+      0,
+      3
+    ],
+    [
+      2,
+      2584,
+      14
+    ],
+    [
+      0,
+      0,
+      106
+    ]
+  ],
+  "config": {
+    "lr": 0.0005,
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "epochs": 8,
+    "input_size": 96,
+    "sched_patience": 2,
+    "sched_factor": 0.3,
+    "label_smoothing": 0.0
+  }
+}

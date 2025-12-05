@@ -1,0 +1,1 @@
+Validation sweep over rare-class thresholds showing macro F1 and balanced accuracy.

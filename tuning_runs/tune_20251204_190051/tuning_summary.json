@@ -1,0 +1,144 @@
+{
+  "trials": [
+    {
+      "trial_id": 1,
+      "config": {
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "batch_size": 32
+      },
+      "metrics": {
+        "best_val_acc": 0.03136531365313653,
+        "test_acc": 0.03874538745387454,
+        "test_loss": 3.1913461313916307
+      }
+    },
+    {
+      "trial_id": 2,
+      "config": {
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "batch_size": 64
+      },
+      "metrics": {
+        "best_val_acc": 0.9228782287822879,
+        "test_acc": 0.9177121771217712,
+        "test_loss": 0.6782227584356751
+      }
+    },
+    {
+      "trial_id": 3,
+      "config": {
+        "lr": 0.001,
+        "weight_decay": 0.0005,
+        "batch_size": 32
+      },
+      "metrics": {
+        "best_val_acc": 0.03616236162361624,
+        "test_acc": 0.03948339483394834,
+        "test_loss": 1.0528126876292634
+      }
+    },
+    {
+      "trial_id": 4,
+      "config": {
+        "lr": 0.001,
+        "weight_decay": 0.0005,
+        "batch_size": 64
+      },
+      "metrics": {
+        "best_val_acc": 0.03579335793357934,
+        "test_acc": 0.03948339483394834,
+        "test_loss": 1.621142501584718
+      }
+    },
+    {
+      "trial_id": 5,
+      "config": {
+        "lr": 0.0005,
+        "weight_decay": 0.0001,
+        "batch_size": 32
+      },
+      "metrics": {
+        "best_val_acc": 0.9826568265682657,
+        "test_acc": 0.9856088560885609,
+        "test_loss": 0.2698282680003835
+      }
+    },
+    {
+      "trial_id": 6,
+      "config": {
+        "lr": 0.0005,
+        "weight_decay": 0.0001,
+        "batch_size": 64
+      },
+      "metrics": {
+        "best_val_acc": 0.9911439114391144,
+        "test_acc": 0.9918819188191882,
+        "test_loss": 0.44787039257842354
+      }
+    },
+    {
+      "trial_id": 7,
+      "config": {
+        "lr": 0.0005,
+        "weight_decay": 0.0005,
+        "batch_size": 32
+      },
+      "metrics": {
+        "best_val_acc": 0.9745387453874539,
+        "test_acc": 0.9760147601476015,
+        "test_loss": 0.3501206611369039
+      }
+    },
+    {
+      "trial_id": 8,
+      "config": {
+        "lr": 0.0005,
+        "weight_decay": 0.0005,
+        "batch_size": 64
+      },
+      "metrics": {
+        "best_val_acc": 0.9745387453874539,
+        "test_acc": 0.9797047970479705,
+        "test_loss": 0.49743121603969487
+      }
+    }
+  ],
+  "best": {
+    "trial_id": 6,
+    "config": {
+      "lr": 0.0005,
+      "weight_decay": 0.0001,
+      "batch_size": 64
+    },
+    "metrics": {
+      "best_val_acc": 0.9911439114391144,
+      "test_acc": 0.9918819188191882,
+      "test_loss": 0.44787039257842354
+    }
+  },
+  "timestamp": "2025-12-04 19:03:24",
+  "args": {
+    "data_dir": "../matlab_env/CNN-for-droplet-sorting/Training Data",
+    "output_dir": "tuning_runs",
+    "epochs": 5,
+    "val_split": 0.15,
+    "test_split": 0.15,
+    "input_size": 64,
+    "num_workers": 4,
+    "seed": 123,
+    "lrs": [
+      0.001,
+      0.0005
+    ],
+    "weight_decays": [
+      0.0001,
+      0.0005
+    ],
+    "batch_sizes": [
+      32,
+      64
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "classes": [
+    "2",
+    "Empty",
+    "Single"
+  ],
+  "class_to_idx": {
+    "2": 0,
+    "Empty": 1,
+    "Single": 2
+  },
+  "input_size": [
+    96,
+    96,
+    3
+  ],
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "metrics": {
+    "best_val_acc": 0.9955719557195571,
+    "test_acc": 0.996309963099631,
+    "test_loss": 0.5753977874705773
+  },
+  "training_args": {
+    "data_dir": "../matlab_env/CNN-for-droplet-sorting/Training Data",
+    "output_dir": "tuning_runs",
+    "val_split": 0.15,
+    "test_split": 0.15,
+    "num_workers": 4,
+    "seed": 123,
+    "lrs": [
+      0.001,
+      0.0005
+    ],
+    "weight_decays": [
+      0.0001,
+      0.0005
+    ],
+    "batch_sizes": [
+      32,
+      64
+    ],
+    "epochs_list": [
+      5,
+      10
+    ],
+    "input_sizes": [
+      64,
+      96
+    ],
+    "sched_patiences": [
+      2,
+      3
+    ],
+    "sched_factors": [
+      0.5,
+      0.3
+    ],
+    "label_smoothings": [
+      0.0,
+      0.05
+    ],
+    "wandb": true,
+    "wandb_project": "droplet-cnn",
+    "wandb_entity": "",
+    "wandb_group": "tuning_ext",
+    "wandb_run_prefix": "",
+    "wandb_key": "",
+    "lr": 0.0005,
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "epochs": 10,
+    "input_size": 96,
+    "sched_patience": 2,
+    "sched_factor": 0.3,
+    "label_smoothing": 0.0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "best_val_acc": 0.9922509225092251,
+  "test_acc": 0.9929889298892989,
+  "epochs": 8,
+  "config": {
+    "lr": 0.0005,
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "epochs": 8,
+    "input_size": 96,
+    "sched_patience": 2,
+    "sched_factor": 0.3,
+    "label_smoothing": 0.0
+  }
+}
